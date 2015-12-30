@@ -1,0 +1,5 @@
+day*
+!day*.c
+!day*.input
+!day*.py
+day07.c
