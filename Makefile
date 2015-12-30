@@ -8,9 +8,11 @@ run: all
 
 day07.c: day07.py day07.input
 	@python3 $< < $(word 2,$^) > $@
+	@echo "GEN $@"
 
 % : %.c
 	@$(CC) $(CFLAGS) $< -o $@
+	@echo "CC $@"
 
 clean:
 	$(RM) $(TARGET) day07.c
